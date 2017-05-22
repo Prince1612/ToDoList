@@ -19,6 +19,7 @@ namespace TodoList.Application.Controllers.Api
         {
             _notesService = notesService;
         }
+        [AllowAnonymous]
         [HttpGet]
         public async Task<IActionResult> GetAllNotesAsync()
         {
