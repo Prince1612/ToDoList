@@ -4,7 +4,6 @@
 
     function addNotesController($location, notesService) {
         var vm = this;
-
         vm.newNote = {};
 
         vm.saveNote = function (note) {
