@@ -1,0 +1,23 @@
+﻿<div>
+    <div>
+        <label>Update Note:</label>
+    </div>
+
+    <div>
+        <div><label>Title:</label></div>
+        <input type="text" placeholder="Enter Title" ng-model="vm.note.title" class="col-lg-12" />
+    </div>
+
+    <div>
+        <label>Message:</label>
+    </div>
+
+    <div>
+        <textarea placeholder="Enter Message" class="col-lg-12" ng-model="vm.note.message"></textarea>
+    </div>
+
+    <div>
+        <button class="btn btn-lg btn-success" ng-click="vm.saveNote(vm.note)">Save Note</button>
+        <button class="btn btn-lg btn-danger" ng-click="vm.cancelChanges()">Cancel</button>
+    </div>
+</div>

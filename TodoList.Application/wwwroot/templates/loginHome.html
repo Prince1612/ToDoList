@@ -1,0 +1,23 @@
+﻿<div>
+    <div>
+        <label class="control-label input-lg col-xs-12">User name:</label>
+    </div>
+    <div>
+        <input type="text" autofocus ng-model="vm.username" placeholder="user name" class="input-lg col-xs-12"/>
+    </div>
+    <div>
+        <label class="control-label input-lg col-xs-12">Password:</label>
+    </div>
+    <div>
+        <input type="password" ng-model="vm.password" placeholder="password" class="input-lg col-xs-12"/>
+    </div>
+    <div>
+        <label class="control-label input-lg col-xs-12">Role:</label>
+    </div>
+    <br />
+    <div>
+        <input type="submit" value="Login" ng-click="vm.login(vm.username, vm.password)" class="btn btn-lg btn-default"/>
+        <input type="button" value="Cancel" ng-click="vm.cancelChanges()" class="btn btn-lg btn-default"/>
+    </div>
+    {{vm.status}}
+</div>

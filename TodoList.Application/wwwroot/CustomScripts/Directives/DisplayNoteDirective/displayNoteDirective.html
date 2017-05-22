@@ -1,0 +1,24 @@
+﻿<div>
+    <table class="table table-bordered table-hover table-responsive">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Message</th>
+                <th>Date Created</th>
+                <th>Last Modified</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="item in noteCollection">
+                <td>{{item.title}}</td>
+                <td>{{item.message}}</td>
+                <td>{{item.dateCreated | date: 'dd/MM/yyyy hh:mm:ss a'}}</td>
+                <td>{{item.lastModified | date: 'dd/MM/yyyy hh:mm:ss a'}}</td>
+                <td><button class="btn btn-sm btn-success" ng-click="editNote(item)">Edit</button></td>
+                <td><button class="btn btn-sm btn-danger" ng-click="deleteNote(item.id)">Delete</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

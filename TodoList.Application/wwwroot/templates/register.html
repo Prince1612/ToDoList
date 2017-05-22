@@ -1,0 +1,37 @@
+﻿<div>
+    <div>
+        <label class="control-label input-lg col-xs-12">User name:</label>
+    </div>
+    <div>
+        <input type="text" autofocus placeholder="user name" ng-model="vm.user.username"  class="input-lg col-xs-12"/>
+    </div>
+
+    <div>
+        <label class="control-label input-lg col-xs-12">Email:</label>
+    </div>
+    <div>
+        <input type="email" placeholder="email" ng-model="vm.user.email"  class="input-lg col-xs-12"/>
+    </div>
+
+    <div>
+        <label class="control-label input-lg col-xs-12">Password:</label>
+    </div>
+    <div>
+        <input type="password" placeholder="password" ng-model="vm.user.password"  class="input-lg col-xs-12"/>
+    </div>
+    <div>
+        <label class="control-label input-lg col-xs-12">Role:</label>
+    </div>
+    <div>
+        <select class="form-control" ng-model="vm.user.role">
+            <option selected value="admin" class="input-lg col-xs-12">Admin</option>
+            <option value="guest" class="input-lg col-xs-12">Guest</option>
+        </select>
+    </div>
+    <br />
+    <div>
+        <input type="submit" value="Register" ng-click="vm.register(vm.user)" class="btn btn-lg btn-default" />
+        <input type="button" value="Cancel" ng-click="vm.cancelChanges()" class="btn btn-lg btn-default" />
+    </div>
+    <label class="label-info">{{vm.status}}</label>
+</div>

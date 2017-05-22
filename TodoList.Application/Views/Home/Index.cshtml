@@ -1,0 +1,36 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Todo List application</title>
+    <link href="~/lib/bootstrap-css/css/bootstrap.css" rel="stylesheet" />
+    <script src="~/lib/angular/angular.js"></script>
+    <script src="~/lib/angular-route/angular-route.js"></script>
+    <script src="~/CustomScripts/Modules/app.js"></script>
+    <script src="~/CustomScripts/Controllers/loginController.js"></script>
+    <script src="~/CustomScripts/Controllers/registerController.js"></script>
+    <script src="~/CustomScripts/Controllers/notesController.js"></script>
+    <script src="~/CustomScripts/Controllers/addNotesController.js"></script>
+    <script src="~/CustomScripts/Controllers/editNotesController.js"></script>
+    <script src="~/CustomScripts/Directives/DisplayNoteDirective/displayNoteDirective.js"></script>
+    <script src="~/CustomScripts/Services/constantsService.js"></script>
+    <script src="~/CustomScripts/Services/accountsService.js"></script>
+    <script src="~/CustomScripts/Services/notesService.js"></script>
+</head>
+<body class="container" ng-app="app">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="#" class="navbar-brand">Todo List</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="#!/register">Register</a></li>
+            <li><a href="#!/login" class="glyphicon glyphicon-log-in"> Login</a></li>
+            <li><a href="#!/login" class="glyphicon glyphicon-log-out"> Logout</a></li>
+        </ul>
+    </div>
+    <div>
+        <div ng-view>
+
+        </div>
+    </div>
+    
+</body>
+</html>
